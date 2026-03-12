@@ -1,0 +1,23 @@
+{
+  "skill_name": "prompt-engineering-guide",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I have a prompt that extracts invoice data from OCR text, but it misses vendor names and the output format changes every run. Rewrite it so the output is stable and easy to parse.",
+      "expected_output": "Provide a stronger extraction prompt with explicit schema, clearer instructions, and a brief explanation of why format stability should improve.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Write a system prompt for a customer support assistant that should answer only from the help center snippets I provide and admit when the answer is not supported by those snippets.",
+      "expected_output": "Produce a grounded prompt that constrains answers to supplied evidence and specifies uncertainty behavior.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "My RAG bot sometimes follows instructions hidden inside retrieved webpages. Help me redesign the prompt so those pages are treated as untrusted content instead of new instructions.",
+      "expected_output": "Provide a prompt-hardening strategy and a revised prompt that clearly separates trusted instructions from untrusted retrieved text.",
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "skill_name": "prompt-engineering-cn",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "帮我优化一个中文发票信息提取提示词。现在最大的问题是供应商名称老漏掉，而且 JSON 字段顺序每次都不一样。",
+      "expected_output": "Return a Chinese-first extraction prompt with explicit schema, stable JSON constraints, and a short explanation of the design choices.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "给我写一个客服知识库问答的系统提示词，只允许根据我提供的帮助中心内容回答，如果资料里没有就直接说不知道。",
+      "expected_output": "Provide a grounded system prompt in Chinese that constrains answers to supplied evidence and specifies uncertainty behavior.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "我们的 RAG 机器人会被检索网页里的恶意文字带偏。帮我重写 prompt，让网页内容只被当成数据，不被当成指令。",
+      "expected_output": "Deliver a Chinese prompt-hardening rewrite that clearly separates trusted instructions from untrusted retrieved content.",
+      "files": []
+    }
+  ]
+}
